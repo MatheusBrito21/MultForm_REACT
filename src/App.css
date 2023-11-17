@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.App{
+    background-color: rgba(219, 219, 219, 0.904);
+    background-image: url('assets/images/back_form.jpg');
+    background-size: cover;
+    background-repeat:repeat ;
+    /* background-attachment:fixed; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.header h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.form-container{
+    /* border: 1px solid blue ; */
+    border-radius:5px ;
+    background-color:#fff ;
+    margin:0 auto ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    height: 400px;
+    box-shadow: rgba(100,100,111, .2) 0px 7px 29px 0px ;
+    /* height: 100%; */
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 300px;
+    /* border: 1px solid green; */
+}
+
+.ant-form-item{
+    /* border: 1px solid blue; */
+    width: 450px;
+}
+
+.inputMask{
+    width: 99%;
+    border-radius: 5px;
+    height: 28px;
+    border: 1px solid rgb(204, 204, 204);
+    padding-left: 5px;
+}
+
+.inputMask:hover{
+    border: 1px solid rgb(0, 132, 255);
+    transition-duration: 0.5s;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
-  to {
-    transform: rotate(360deg);
-  }
-}

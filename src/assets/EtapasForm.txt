@@ -1,0 +1,30 @@
+Dados usuário = {
+Nome,
+Cpf,
+Sexo,
+Data Nascimento,
+}
+
+Contato = {
+Email ,
+Telefone, 
+}
+
+Trabalho = {
+Possui Carteira,
+Tempo Carteira,
+Profissao atual,
+Renda atual,
+}
+
+Previdencia = {
+Ja pagou previdencia como autonomo?,
+Quanto Tempo,
+Possui doença,
+Qual?,
+Possui cadastro,
+}
+
+Aceita termo:
+Sim ou nao
+
